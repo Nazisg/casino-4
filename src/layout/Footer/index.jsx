@@ -106,7 +106,7 @@ export default function Footer() {
 
         {/* Bottom Section: Copyright */}
         <div className="text-center">
-          <p className="text-gray-500 text-sm">© 2025 Top10RoyalCasino.co.uk. All rights reserved. This website is for informational purposes only.</p>
+          <p className="text-gray-500 text-sm">© 2025 Casino. All rights reserved. This website is for informational purposes only.</p>
           <p className="text-gray-600 text-xs mt-2">Gambling can be harmful if not controlled. Please gamble responsibly and within your means.</p>
         </div>
       </div>
