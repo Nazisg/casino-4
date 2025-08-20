@@ -9,14 +9,24 @@ export default function Card({ rank, name, icon, rating, minDeposit, methods, bo
                 <div className="xl:text-[30px] text-[16px] col-span-1 flex xl:items-center justify-center text-4xl font-bold text-slate-600 transition-colors duration-300 group-hover:text-amber-400">
                     #{rank}
                 </div>
-                <Link href={link} target="_blank" rel="noopener noreferrer">
-                    <img
-                        src={icon}
-                        alt={name || "casino-logo"}
-                        className="w-full h-full object-contain max-h-[50px]"
-                    />
-                </Link>
+                <div className="flex flex-col gap-3">
+                    <Link href={link} target="_blank" rel="noopener noreferrer">
+                        <img
+                            src={icon}
+                            alt={name || "casino-logo"}
+                            className="w-full h-full object-contain max-h-[50px]"
+                        />
+                    </Link>
+                    <div className="flex flex-col lg:flex-row gap-1 items-center justify-center">
+                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] border-[#fff] text-[10px]"
+                        > UK licensed</div>
+                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] border-[#fff] text-[10px]"
+                        >T&C only 18+</div>
+                    </div>
+                </div>
+
             </div>
+
 
             {/* Expert Rating */}
             <div className="col-span-1 flex flex-col gap-2 items-center justify-center">
